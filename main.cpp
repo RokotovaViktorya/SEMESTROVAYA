@@ -9,7 +9,7 @@ enum Direction { UP, DOWN, LEFT, RIGHT };
 int Field[4][4];
 
 
-void CreateField()
+void CreateField()  				//создание игрового поля
 {
 	bool NumIsFree[15];  
 	int Nums[15]; 
