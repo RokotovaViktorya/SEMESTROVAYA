@@ -9,7 +9,7 @@ enum Direction { UP, DOWN, LEFT, RIGHT };
 int Field[4][4];
 
 
-void CreateField()  				//создание игрового поля
+void CreateField()  				//создание игрового поля 
 {
 	bool NumIsFree[15];  
 	int Nums[15]; 
@@ -51,7 +51,7 @@ void CreateField()  				//создание игрового поля
 }
 
 
-void DrawField(void)
+void DrawField(void) //изображеение игрового поля
 {
 	
 	HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -86,7 +86,7 @@ void DrawField(void)
 }
 
 
-void Move(int direction)
+void Move(int direction) //передвижение пятнашек
 {
 	int dy[] = { 1, -1, 0, 0 };
 	int dx[] = { 0, 0, 1, -1 };
@@ -108,7 +108,7 @@ void Move(int direction)
 }
 
 
-bool EndOfGame()
+bool EndOfGame() //условие завершения игры 
 {
 	int i;
 	for (i = 0; i < 15; i++)
